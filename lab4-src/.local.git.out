@@ -1,0 +1,6122 @@
+[master (root-commit) bbbbeb6] Commit HTTP Server
+ 13 files changed, 1726 insertions(+)
+ create mode 100755 daytime-client.cc
+ create mode 100644 daytime-server.cc
+ create mode 100755 hello.cc
+ create mode 100755 http-root-dir/cgi-src/change-passwd.c
+ create mode 100755 http-root-dir/cgi-src/imagemap.c
+ create mode 100755 http-root-dir/cgi-src/jj.c
+ create mode 100755 http-root-dir/cgi-src/phf.c
+ create mode 100755 http-root-dir/cgi-src/post-query.c
+ create mode 100755 http-root-dir/cgi-src/query.c
+ create mode 100755 http-root-dir/cgi-src/util.c
+ create mode 100755 http-root-dir/cgi-src/util.h
+ create mode 100644 http-server.cc
+ create mode 100755 use-dlopen.cc
+[master da29a4d] Commit HTTP Server
+ 1 file changed, 27 insertions(+)
+ create mode 100755 Makefile
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+
+nothing added to commit but untracked files present
+[master b2d3ad8] Commit HTTP Server
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+
+nothing added to commit but untracked files present
+[master 62ccdf5] Commit HTTP Server
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 7e432c9] Commit HTTP Server
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+
+nothing added to commit but untracked files present
+[master f6d970d] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab12.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+[master 3b672cc] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab12.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 120 insertions(+), 194 deletions(-)
+ rewrite daytime-server.cc (96%)
+[master 3ea6cd6] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab12.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttp.cpp
+
+nothing added to commit but untracked files present
+[master 0790768] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab16.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 4 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd.cpp
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd.cpp
+
+nothing added to commit but untracked files present
+[master 8df80b1] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab16.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c064700000349
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c06490000034a
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+[master 99adc4c] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab15.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/query.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+[master a2ecf07] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab16.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master c3e99b6] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab16.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c05da00000c10
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c05dc00000c11
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c05da00000c12
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c05dc00000c13
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.nfs00000000029c05da00000c14
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+[master 1fb503e] Commit HTTP Server
+ Committer: Akshit Kandi <akandi@sslab15.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	README
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	README
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.myhttpd.cpp.swp
+	README
+	daytime-client
+	daytime-client.o
+	daytime-server
+	daytime-server.o
+	http-root-dir/cgi-bin/
+	http-root-dir/cgi-src/Makefile
+	http-root-dir/cgi-src/imagemap.o
+	http-root-dir/cgi-src/jj.o
+	http-root-dir/cgi-src/phf.o
+	http-root-dir/cgi-src/post-query.o
+	http-root-dir/cgi-src/query.o
+	http-root-dir/cgi-src/util.o
+	http-root-dir/htdocs/
+	http-root-dir/icons/
+	http-server
+	http-server.o
+	myhttpd
+	myhttpd.cpp
+	myhttpd.o
+
+nothing added to commit but untracked files present
